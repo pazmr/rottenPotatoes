@@ -15,6 +15,8 @@ module NavigationHelpers
 
     when /^the home\s?page$/ then
       movies_path
+    when /the RottenPotatoes home page/ then
+      movies_path
     when /the edit page for "(.*)"/ 
       query = Movie.find_by_title($1)
       edit_movie_path(query)

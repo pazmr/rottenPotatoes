@@ -17,6 +17,7 @@ Then /the director of "Alien" should be "Ridley Scott"/ do
     page.body.should =~ /Ridley Scott/
 end
 
+ 
 Given /^(?:|I )am on the details page for "(.*)"/ do |title|
     record = Movie.find_by(title: title)
     visit movie_path(record)

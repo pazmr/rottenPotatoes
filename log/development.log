@@ -106,3 +106,72 @@ Started GET "/assets/jquery_ujs.self.js?body=1" for 190.104.24.226 at 2015-11-29
 
 
 Started GET "/assets/application.self.js?body=1" for 190.104.24.226 at 2015-11-29 14:31:46 +0000
+
+
+Started GET "/assets/rails.png" for 169.253.194.1 at 2015-12-03 18:39:22 +0000
+
+
+Started GET "/movies" for 169.253.194.1 at 2015-12-03 18:39:27 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (51.9ms)
+Completed 200 OK in 303ms (Views: 145.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 169.253.194.1 at 2015-12-03 18:39:28 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:28 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:28 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:28 +0000
+
+
+Started GET "/movies/22" for 169.253.194.1 at 2015-12-03 18:39:32 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered movies/show.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 38ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 169.253.194.1 at 2015-12-03 18:39:32 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:32 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:32 +0000
+
+
+Started GET "/movies/search_director_movies/22/related_movies" for 169.253.194.1 at 2015-12-03 18:39:34 +0000
+Processing by MoviesController#search_director_movies as HTML
+  Parameters: {"related"=>"22"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 22]]
+Redirected to https://hw-ruby-intro-saas-maxpaz.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 169.253.194.1 at 2015-12-03 18:39:35 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 169.253.194.1 at 2015-12-03 18:39:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:35 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:35 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 169.253.194.1 at 2015-12-03 18:39:35 +0000
