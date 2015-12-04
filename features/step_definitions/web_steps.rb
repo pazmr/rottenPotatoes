@@ -55,7 +55,7 @@ end
 
 When /^(?:|I )follow "([^"]*)"$/ do |link|
   
-    click_link "Find Movies With Same Director"
+    click_link(link)
 end
 
 When /^(?:|I )fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
