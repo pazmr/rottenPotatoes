@@ -35,6 +35,7 @@ Scenario: can't find similar movies if we don't know director (sad path)
 
 # CRUD  
 Scenario: create the movie
+  Given I am on the RottenPotatoes home page
   When I follow "Add new movie"
   And  I fill in "Title" with "La llamita Blanca"
   And  I press "Save Changes"
