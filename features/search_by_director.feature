@@ -32,3 +32,10 @@ Scenario: can't find similar movies if we don't know director (sad path)
   When  I follow "Find Movies With Same Director"
   Then I should be on the home page or the RottenPotatoes home page
   And   I should see "'Alien' has no director info"
+
+# CRUD  
+Scenario: create the movie
+  When I follow "Add new movie"
+  And  I fill in "Title" with "La llamita Blanca"
+  And  I press "Save Changes"
+  Then I should see "La llamita Blanca"
